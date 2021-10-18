@@ -1,4 +1,5 @@
 function [res] =  powerlawTransform(A,c,r)
+    A = mat2gray(A);
     [numRows,numCols] = size(A);
     for i = 1:numRows
         for j = 1:numCols
@@ -7,4 +8,5 @@ function [res] =  powerlawTransform(A,c,r)
     end
     
     res = A;
+    res = mat2gray(res);
 end

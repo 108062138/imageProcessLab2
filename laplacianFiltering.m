@@ -1,4 +1,5 @@
 function [output,gradientC] =  laplacianFiltering(A,mask,scale)
+    A = mat2gray(A);
     [numRows,numCols] = size(A);
     [maskRows,maskCols] = size(mask);
     output = zeros(numRows,numCols);
@@ -16,5 +17,8 @@ function [output,gradientC] =  laplacianFiltering(A,mask,scale)
             output(i,j) = A(i,j) + gradientC(i,j);
         end
     end
+
+    output = mat2gray(output);
+    disp(class(output));
 end
 

@@ -1,4 +1,5 @@
 function [res] =  logTransform(A,c)
+    A = mat2gray(A);
     [numRows,numCols] = size(A);
     disp(log10(100));
     disp(c);
@@ -11,5 +12,6 @@ function [res] =  logTransform(A,c)
     end
     
     res = A;
+    res = mat2gray(res);
 end
 

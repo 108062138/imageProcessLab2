@@ -1,4 +1,5 @@
 function [res] =  spatialFiltering(A,mask)
+    A = mat2gray(A);
     [numRows,numCols] = size(A);
     res = zeros(numRows,numCols);
     [maskRows,maskCols] = size(mask);
@@ -31,6 +32,6 @@ function [res] =  spatialFiltering(A,mask)
             res(i,j) = val; 
         end
     end
-    
+    res = mat2gray(res);
 end
 
