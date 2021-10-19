@@ -38,3 +38,6 @@ by 108062138 Po-Yu,Wu
 
 ## hackmd report link
 `https://hackmd.io/@sBeNJ4fqRNqa67PhyWWV4A/H15nfh9rF`
+
+## I'm so depressed......
+> https://youtu.be/ejLQSpVBxBE
