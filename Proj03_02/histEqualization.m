@@ -20,5 +20,6 @@ function [output,T] = histEqualization(A)
         end
     end
     output = uint8(255*mat2gray(output));
+    %wwwwwww liao hc why?????
 end
 
